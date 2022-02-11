@@ -5,6 +5,9 @@ body{
     /* justify-content:center; */
     /* align-items: center; */
     /* flex-direction: column; */
+    background: black;
+    color: white;
+    
 
 }
 .nav{
@@ -14,11 +17,12 @@ body{
     width:100%;
     height:60px;   /* Height of the header */
     padding-top: 20px;
-    background: lightblue;
+    background: black;
 }
 div.three{
     display: flex;
     justify-content:space-evenly;
+    color: white;
 }
 #footer {
     position:absolute;
@@ -26,7 +30,7 @@ div.three{
     bottom:0;
     width:100%;
     height:60px;   /* Height of the footer */
-    background: lightblue;
+    background: black;
  }
 
  #about-me{
@@ -34,3 +38,18 @@ div.three{
      align-items: center;
  }
  
+
+ a:link
+ {
+     color: blue;
+ }
+ 
+ a:visited
+ {
+     color:white;
+ }
+ 
+ a:hover 
+ {
+     color:lightcoral;
+ }
