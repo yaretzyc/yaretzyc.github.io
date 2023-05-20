@@ -1,13 +1,31 @@
 
 body{
     font-family: 'Merriweather', serif;
-    /* display: flex; */
-    /* justify-content:center; */
-    /* align-items: center; */
-    /* flex-direction: column; */
     background: black;
     color: white;
+    /* min-height: 100%; */
 
+
+}
+
+#content-footer {
+    display: grid;
+    height:100vh;
+    grid-template-rows: 600px 370px 100px;
+
+    grid-template-areas: 
+    "content"
+    "portfolio"
+    "footer";
+    
+}
+#portfolio {
+
+    grid-area: portfolio;
+}
+
+.content {
+    grid-area: content;
 }
 
 .main{
@@ -15,11 +33,7 @@ body{
 }
 
 .padding-main{
-    padding: 12px 24px!important;
-}
-
-.nav{
-    
+    padding: 12px 12px 0 24px !important;
 }
 
 .sidebar {
@@ -29,11 +43,23 @@ body{
     position: fixed!important;
     z-index: 1;
     overflow: auto;
-    /* text-align: center!important; */
-    /* font-size: 12px!important; */
-
 }
 
 
+/* #footer {
+    outline: solid green 5px;
+    background: yellow;
+} */
+
+#contact {
+    outline: solid green 5px;
+    /* background: yellow; */
+    grid-area: footer;
+
+    height: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
 
  
